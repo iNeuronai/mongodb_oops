@@ -23,3 +23,23 @@ data = {
 
 
 col.insert_one(data)
+
+
+
+data1 = {
+    'name' : 'full stack web dev' ,
+    'instructor' : ['hitesh' , 'anurag'],
+    'price ' : '17700',
+    'duration' : 'eight month' 
+    
+}
+
+
+col.insert_one(data1)
+
+
+rec = col.find()
+
+from pprint import pprint
+for i in rec :
+    pprint(i)
