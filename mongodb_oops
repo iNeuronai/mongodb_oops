@@ -35,6 +35,13 @@ data1 = {
 }
 
 
+col.delete_many({'duration': 'six months'})
+
+
+col.update_many({"price ":'1800'} , {"$set" : {"price " : 18000}})
+
+
+
 col.insert_one(data1)
 
 
