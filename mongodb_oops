@@ -50,3 +50,23 @@ rec = col.find()
 from pprint import pprint
 for i in rec :
     pprint(i)
+    
+    
+    
+    
+ class and objects : 
+ 
+ 
+ class ineuron : 
+    
+    def ineuron1(self):
+        print("ineuron is a compnay in edtech")
+        
+    def ineron_students(self):
+        print("students are amazing in ineuron")
+        
+    def ineuron_support(self):
+        print("yes we do give support")
+    
+    def ineuron_fee(self):
+        print("its very very affordable ") 
