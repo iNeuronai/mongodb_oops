@@ -1,1 +1,25 @@
 
+import pymongo
+client = pymongo.MongoClient("mongodb+srv://mongodb:mongodb@cluster0.qivyyos.mongodb.net/?retryWrites=true&w=majority")
+db = client.test
+
+
+db = client['ineuron']
+col = db['course']
+col1 = db['studets']
+
+data = {
+    'course_name' : ['full stack data science ','full stack data analytics' , 'big data' , 'devops' , 'blockchain'],
+    'course_instructor' : ['sudhanshu' ,'anand' , 'shashank' , 'hitesh' , 'navin'],
+    'start_date' : '12-12-2023',
+    'duration' : 'six months',
+    'mode' : 'live online',
+    'certification' : 'yes',
+    'prequisite' : ' Dedication',
+    'resume' : 'yes',
+    'mockinterview' : 'yes'
+    
+}
+
+
+col.insert_one(data)
